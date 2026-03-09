@@ -1,0 +1,184 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+}
+
+html {
+  font-size: 16px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.section {
+  padding: 3rem 0;
+}
+
+/* Header */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1rem;
+  background-color: gray;
+}
+
+.nav-items {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+/* Hero */
+
+.hero {
+  /* background-color: blue; */
+
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+    url("images/hero-image.png");
+  background-size: cover;
+  background-position: center;
+  /* height: 40vh; */
+  aspect-ratio: 16/9;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* gap: 1px; */
+
+  /* aspect-ratio: 4/3; */
+  /* height: auto; */
+
+  color: white;
+  width: 100%;
+}
+
+.hero h1 {
+  margin-bottom: 0;
+}
+
+.hero p {
+  margin-top: 0;
+}
+
+/* Welcome */
+
+.welcome {
+  padding: 1rem 1rem;
+  /* font-size: 0.5rem; */
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.welcome-header {
+  font-size: 1.5rem;
+  margin-bottom: 0;
+}
+
+.welcome-text {
+  text-align: center;
+  margin-top: 0;
+}
+
+/* Featured Dishes */
+
+.featured {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+}
+
+.featured img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+/* Restaurant Information */
+.information {
+  grid: flex;
+  align-items: center;
+  padding: 1rem 1rem;
+}
+
+.restaurant-details {
+  margin-bottom: 1rem;
+}
+
+.map {
+  width: 100%;
+  height: 250px;
+  /* height: auto; */
+}
+
+/* Footer */
+footer {
+  grid: flex;
+  padding: 1rem 1rem;
+  flex-direction: column;
+
+  align-items: center;
+}
+
+.social-media {
+  text-align: center;
+}
+
+.copyright {
+  text-align: center;
+}
+
+/* 375px   (typical phone)
+768px   (tablet)
+1024px  (small laptop)
+1440px */
+
+/* Menu */
+/* About US */
+
+/* Navbar
+Hero
+Featured dishes
+About
+Hours + map
+Footer - 
+
+socialmedia
+
+that allows user to go back home
+
+copyright */
+
+/* use colors taht evoke sea, sunlight, olve trees, warm stone, coastal and earthy. maybe deep blue and olve green. warm cream for background, accent is terracotta. avoid very dark or neon colors */
