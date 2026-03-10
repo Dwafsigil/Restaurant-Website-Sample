@@ -6,66 +6,111 @@
     <title>Website Title</title>
 
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
   </head>
   <body>
+    <!-- Hero Container -->
+    <!-- <section class= "hero-container"> -->
+
+    <!-- Nav Bar -->
     <header>
       <nav class="navbar">
         <div class="logo">Logo</div>
         <!-- <h1>Liva Restaurant</h1> -->
-        <ul class="nav-items">
+        <!-- <ul class="nav-items">
           <li>Home</li>
           <li>Menu</li>
           <li>About Us</li>
-        </ul>
+        </ul> -->
+        <button class="menu-toggle" aria-label="Open Menu">☰</button>
       </nav>
     </header>
 
-    <main>
-      <section class="hero">
-        <h1>Restaurant Name</h1>
-        <p>Short Description</p>
-        <!-- <a class="btn" href="#">View Menu</a> -->
-      </section>
-      <section class="welcome">
-        <h1 class="welcome-header">Welcome to Restaurant Name</h1>
-        <p class="welcome-text">
-          Lorem ipsum dolor sit amet consectetur adipiscing elit. Consectetur
-          adipiscing elit quisque faucibus ex sapien vitae. Ex sapien vitae
-          pellentesque sem placerat in id. Placerat in id cursus mi pretium
-          tellus duis. Pretium tellus duis convallis tempus leo eu aenean.
-        </p>
-        <button>Our Menu</button>
-      </section>
-      <section class="featured">
-        <img src="images/image1.png" />
-        <img src="images/image2.png" />
-        <img src="images/image3.png" />
-        <img src="images/image4.png" />
-      </section>
+    <!-- Hero Section -->
 
-      <section class="information">
-        <ul class="restaurant-details">
-          <li>Restaurant Name</li>
-          <li>2026 Austin Hwy, San Antonio, TX 78218</li>
-          <li>Number</li>
-          <li>Sunday - Saturday: 10 AM - 9 PM</li>
-        </ul>
-        <iframe
-          class="map"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5840.041262488003!2d-98.41641835694278!3d29.501510318509283!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x865cf59ed7f47209%3A0xac8f694e779778fb!2sLiva%20Mediterranean%20Grill!5e0!3m2!1sen!2sus!4v1773031888767!5m2!1sen!2sus"
-          width="600"
-          height="450"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
-      </section>
-    </main>
+    <section class="hero">
+      <h1 class="restaurant-name">Liva</h1>
+      <h3 class="restaurant-type">Mediterranean Grill</h3>
+
+      <p class="hero-descriptor">
+        Lorem ipsum dolor sit amet consectetur adipiscing elit.
+      </p>
+
+      <button class="menu">Our Menu</button>
+      <!-- <a class="btn" href="#">View Menu</a> -->
+    </section>
+    <!-- </section> -->
+
+    <!-- First Set of Featured Dishes -->
+    <section class="featured-one">
+      <img src="images/image1.png" />
+      <img src="images/image2.png" />
+      <img src="images/image3.png" />
+    </section>
+
+    <!-- Welcome -->
+    <section class="welcome">
+      <h1 class="welcome-header">About Our Restaurant</h1>
+      <p class="welcome-text">
+        Lorem ipsum dolor sit amet consectetur adipiscing elit. Consectetur
+        adipiscing elit quisque faucibus ex sapien vitae. Ex sapien vitae
+        pellentesque sem placerat in id. Placerat in id cursus mi pretium tellus
+        duis. Pretium tellus duis convallis tempus leo eu aenean.
+      </p>
+      <!-- <button>Our Menu</button> -->
+    </section>
+    <section class="featured-two">
+      <img src="images/image1.png" />
+      <img src="images/image2.png" />
+      <img src="images/image3.png" />
+      <!-- <img src="images/image4.png" /> -->
+    </section>
+
+    <section class="information">
+      <h1 class="visit">Visit Us</h1>
+      <a
+        href="https://www.google.com/maps?sca_esv=a57f38d8b1aff971&output=search&q=liva+mediterranean+grill&source=lnms&fbs=ADc_l-aN0CWEZBOHjofHoaMMDiKpaEWjvZ2Py1XXV8d8KvlI3kj_s5Jds98_ubVRf0unUVtMj3b5qRCQvf-LzvW3-JheeIhpNOIose_kAAB-31CgymdLJnndbzPbglTEM6KYDgMD7rxih85cRcRsBW-UoltC9nQQaQKf8DdEDBkIUywhCUxpnN1ZgevOCb4jJtaEa-NN3P8vw_WvwM6X9av9rJ9hnqZFJg&entry=mc&ved=1t:200715&ictx=111"
+        target="_blank"
+        class="google-map"
+      >
+        <img src="images/google-map.png" class="map" />
+      </a>
+
+      <ul class="restaurant-information">
+        <li>
+          <h2>Address</h2>
+          <p>2026 Austin Hwy, San Antonio, TX 78218</p>
+        </li>
+        <li>
+          <h2>Phone</h2>
+          <p>726-627-9807</p>
+        </li>
+        <li>
+          <h2>Email</h2>
+          <p>email@gmail.com</p>
+        </li>
+        <li>
+          <h2>Hours</h2>
+          <p>Open Daily: 10 AM - 9 PM</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Social Media -->
+    <section class="media">
+      <a href="#" class="facebook"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="#" class="instagram"><i class="fa-brands fa-instagram"></i></a>
+    </section>
+    <!-- </main> -->
 
     <footer>
-      <div class="social-media">social media</div>
-      <div class="copyright">copy right</div>
+      <!-- <div class="social-media">social media</div> -->
+      <div class="copyright">
+        © 2026 Liva Mediterranean Grill. All rights reserved.
+      </div>
     </footer>
   </body>
 </html>

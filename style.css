@@ -17,12 +17,18 @@ a {
 
 body {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Playfair Display", serif;
   line-height: 1.5;
 }
 
 html {
   font-size: 16px;
+}
+
+p {
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
 }
 
 .container {
@@ -42,33 +48,56 @@ img {
   padding: 3rem 0;
 }
 
+.hero-container {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+    url("images/hero-image.png");
+  background-size: cover;
+  background-position: center;
+
+  aspect-ratio: 16/9;
+}
+
 /* Header */
 
 .navbar {
   display: flex;
   justify-content: space-between;
-  padding: 1rem 1rem;
-  background-color: gray;
+  align-items: center;
+  /* justify-content: center; */
+  padding: 2rem 2rem;
+  background-color: #f4efe6;
+  /* align-self: center; */
+  /* height: 5rem; */
+}
+
+.logo {
+  color: #2b2b2b;
+  /* height: 70px; */
+  text-align: center;
+  /* padding: 0; */
 }
 
 .nav-items {
   display: flex;
   justify-content: space-between;
   gap: 1rem;
+  color: white;
+}
+
+.menu-toggle {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  color: #2b2b2b;
+  font-size: 1.3rem;
 }
 
 /* Hero */
 
 .hero {
   /* background-color: blue; */
-
-  background-image:
-    linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
-    url("images/hero-image.png");
-  background-size: cover;
-  background-position: center;
-  /* height: 40vh; */
-  aspect-ratio: 16/9;
 
   display: flex;
   align-items: center;
@@ -78,86 +107,199 @@ img {
 
   /* aspect-ratio: 4/3; */
   /* height: auto; */
-
-  color: white;
+  background-color: #6b7a3a;
+  color: #f4efe6;
   width: 100%;
+  padding: 1rem 1rem;
+  padding-top: 3rem;
 }
 
-.hero h1 {
+.restaurant-name {
+  font-size: 4rem;
+  font-family: "Playfair Display", serif;
+  margin-top: 0;
+
   margin-bottom: 0;
 }
 
-.hero p {
+.restaurant-type {
+  /* font-size: 1.3rem; */
   margin-top: 0;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.hero-descriptor {
+  font-size: 1rem;
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  padding: 0 2rem;
+}
+
+.menu {
+  margin-top: 1rem;
+  color: #6b7a3a;
+
+  padding: 1rem 2rem;
+  text-decoration: none;
+
+  font-weight: 600;
+  /* letter-spacing: 3px; */
+  letter-spacing: 1.5px;
+
+  display: inline-block;
+  /* padding: 0 2rem; */
+}
+
+/* First Set of Featured Dishes */
+.featured-one {
+  display: flex;
+  flex-direction: column;
+  background-color: #6b7a3a;
+  gap: 1.5rem;
+  padding: 2rem 2rem;
+  /* border-radius: 6px; */
+}
+
+.featured-one img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 6px;
 }
 
 /* Welcome */
 
 .welcome {
   padding: 1rem 1rem;
+  padding-top: 3rem;
   /* font-size: 0.5rem; */
 
   display: flex;
   align-items: center;
   flex-direction: column;
+  background-color: #f4efe6;
 }
 
 .welcome-header {
   font-size: 1.5rem;
   margin-bottom: 0;
+  font-family: "Playfair Display", serif;
+  color: #b22100;
 }
 
 .welcome-text {
   text-align: center;
   margin-top: 0;
+  font-family: "Lato", sans-serif;
+  padding: 0 1rem;
+  margin-top: 1rem;
 }
 
 /* Featured Dishes */
 
-.featured {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 0.5rem;
+.featured-two {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 2rem 2rem;
+  background-color: #f4efe6;
 }
 
-.featured img {
+.featured-two img {
   width: 100%;
   aspect-ratio: 4 / 3;
   object-fit: cover;
+  border-radius: 6px;
 }
 
 /* Restaurant Information */
 .information {
-  grid: flex;
+  display: flex;
   align-items: center;
+  flex-direction: column;
+  padding: 0rem 1rem;
+  background-color: #6b7a3a;
+  color: #f4efe6;
+  margin-bottom: 0;
+  padding-top: 3rem;
+}
+
+.information a {
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.google-map {
+  width: 100%;
+  display: block;
+  border: 3px solid #b22100;
+  border-radius: 6px;
+}
+
+.restaurant-information {
+  margin-top: 1rem;
   padding: 1rem 1rem;
 }
 
-.restaurant-details {
-  margin-bottom: 1rem;
+.restaurant-information h2 {
+  margin-bottom: 0;
+  font-family: "Lato", sans-serif;
+}
+.restaurant-information p {
+  margin-top: 0;
+  font-family: "Lato", sans-serif;
 }
 
-.map {
-  width: 100%;
-  height: 250px;
-  /* height: auto; */
+.media {
+  background-color: #6b7a3a;
+  padding: 0 2rem;
+  padding-bottom: 2rem;
+  display: flex;
+  margin-top: 0;
+
+  gap: 1rem;
+}
+
+.media a {
+  color: #f4efe6;
+
+  width: 2rem;
+  height: 2rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-decoration: none;
+}
+
+.media i {
+  color: white;
+  font-size: 1.25rem;
+}
+
+.instagram {
+  background-color: #e4405f;
+  font-size: 20px;
+}
+
+.facebook {
+  background-color: #1877f2;
 }
 
 /* Footer */
 footer {
-  grid: flex;
-  padding: 1rem 1rem;
-  flex-direction: column;
-
-  align-items: center;
-}
-
-.social-media {
+  background-color: #212121;
+  color: #f4efe6;
   text-align: center;
+  padding: 1.2rem;
+  font-size: 0.85rem;
 }
 
 .copyright {
-  text-align: center;
+  opacity: 0.85;
 }
 
 /* 375px   (typical phone)
@@ -181,4 +323,14 @@ that allows user to go back home
 
 copyright */
 
-/* use colors taht evoke sea, sunlight, olve trees, warm stone, coastal and earthy. maybe deep blue and olve green. warm cream for background, accent is terracotta. avoid very dark or neon colors */
+/* use colors taht evoke sea, sunlight, olve trees, warm stone, coastal and earthy. maybe deep blue and olve green. warm cream for 
+#f4efe6  → navbar background
+#8b2e1a  → accent color (buttons / highlights)
+#2b2b2b  → text
+
+Cream / sand      #F4EFE6
+Olive green       #6B7A3A
+Terracotta        #C65D3B
+Dark charcoal     #2B2B2B
+
+background, accent is terracotta. avoid very dark or neon colors */
