@@ -390,11 +390,14 @@ header {
 
 /* Footer */
 footer {
+  position: flex;
   background-color: #212121;
   color: #f4efe6;
+  justify-content: center;
   text-align: center;
   padding: 1.2rem;
   font-size: 0.85rem;
+  font-variant-numeric: lining-nums;
 }
 
 .copyright {
@@ -405,31 +408,3 @@ footer {
 768px   (tablet)
 1024px  (small laptop)
 1440px */
-
-/* Menu */
-/* About US */
-
-/* Navbar
-Hero
-Featured dishes
-About
-Hours + map
-Footer - 
-
-socialmedia
-
-that allows user to go back home
-
-copyright */
-
-/* use colors taht evoke sea, sunlight, olve trees, warm stone, coastal and earthy. maybe deep blue and olve green. warm cream for 
-#f4efe6  → navbar background
-#8b2e1a  → accent color (buttons / highlights)
-#2b2b2b  → text
-
-Cream / sand      #F4EFE6
-Olive green       #6B7A3A
-Terracotta        #C65D3B
-Dark charcoal     #2B2B2B
-
-background, accent is terracotta. avoid very dark or neon colors */
