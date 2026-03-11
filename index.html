@@ -10,6 +10,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-- Hero Container -->
@@ -18,16 +22,35 @@
     <!-- Nav Bar -->
     <header>
       <nav class="navbar">
-        <div class="logo">Logo</div>
-        <!-- <h1>Liva Restaurant</h1> -->
-        <!-- <ul class="nav-items">
-          <li>Home</li>
-          <li>Menu</li>
-          <li>About Us</li>
-        </ul> -->
+        <div class="logo">Liva</div>
         <button class="menu-toggle" aria-label="Open Menu">☰</button>
       </nav>
     </header>
+
+    <section class="menu-overlay hidden">
+      <div class="menu-panel">
+        <button class="menu-quit" aria-label="Close menu">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            stroke="white"
+            fill="none"
+            stroke-width="2"
+          >
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+
+        <a href="#"> MENU </a>
+        <a
+          href="https://www.doordash.com/store/liva-mediterranean-grill-san-antonio-40216179/94163946/?srsltid=AfmBOopJwxMjWfSLfZvglpSDnY2nKvLCQ7Kzbz8cdJoswoVOarJsMAIm"
+        >
+          ORDER NOW
+        </a>
+      </div>
+    </section>
 
     <!-- Hero Section -->
 
@@ -39,7 +62,7 @@
         Lorem ipsum dolor sit amet consectetur adipiscing elit.
       </p>
 
-      <button class="menu">Our Menu</button>
+      <a class="menu">Our Menu</a>
       <!-- <a class="btn" href="#">View Menu</a> -->
     </section>
     <!-- </section> -->
@@ -60,12 +83,19 @@
         pellentesque sem placerat in id. Placerat in id cursus mi pretium tellus
         duis. Pretium tellus duis convallis tempus leo eu aenean.
       </p>
+      <a
+        href="https://www.doordash.com/store/liva-mediterranean-grill-san-antonio-40216179/94163946/?srsltid=AfmBOopJwxMjWfSLfZvglpSDnY2nKvLCQ7Kzbz8cdJoswoVOarJsMAIm"
+        class="order-online"
+      >
+        Order Online</a
+      >
+
       <!-- <button>Our Menu</button> -->
     </section>
     <section class="featured-two">
-      <img src="images/image1.png" />
-      <img src="images/image2.png" />
-      <img src="images/image3.png" />
+      <img src="images/image4.png" />
+      <img src="images/image5.png" />
+      <img src="images/image6.png" />
       <!-- <img src="images/image4.png" /> -->
     </section>
 
@@ -101,8 +131,19 @@
 
     <!-- Social Media -->
     <section class="media">
-      <a href="#" class="facebook"><i class="fa-brands fa-facebook-f"></i></a>
-      <a href="#" class="instagram"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://www.facebook.com/liva.mediterranean/" class="facebook"
+        ><i class="fa-brands fa-facebook-f"></i
+      ></a>
+      <a
+        href="https://www.instagram.com/liva_mediterraneangrill/"
+        class="instagram"
+        ><i class="fa-brands fa-instagram"></i
+      ></a>
+      <a
+        href="https://www.yelp.com/biz/liva-mediterranean-grill-san-antonio"
+        class="yelp"
+        ><i class="fa-brands fa-yelp"></i
+      ></a>
     </section>
     <!-- </main> -->
 
@@ -112,5 +153,6 @@
         © 2026 Liva Mediterranean Grill. All rights reserved.
       </div>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>

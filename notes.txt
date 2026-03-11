@@ -2,4 +2,3 @@
 2. tap to call phone NumberGet directions
 3. Menu
 4. Order button
-5. Phone Number
