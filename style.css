@@ -203,6 +203,14 @@ header {
   padding: 1rem 1.5rem;
 }
 
+.background-green {
+  background-color: #6b7a3a;
+}
+
+.background-white {
+  background-color: #f4efe6;
+}
+
 .menu {
   margin-top: 1rem;
   color: #6b7a3a;
